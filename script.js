@@ -1,47 +1,28 @@
-// 1. Efeito de Scroll no Navbar
-window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        nav.style.padding = '10px 0';
-        nav.style.backgroundColor = '#f4f9f9';
-    } else {
-        nav.style.padding = '15px 0';
-        nav.style.backgroundColor = '#fff';
-    }
-});
-
-// 2. Animação de Entrada (Fade In) ao carregar a página
+// Aguarda o carregamento do conteúdo
 document.addEventListener('DOMContentLoaded', () => {
-    const heroElements = document.querySelectorAll('.fade-in');
-    heroElements.forEach((el, index) => {
-        setTimeout(() => {
-            el.classList.add('active');
-        }, index * 300);
-    });
-});
+    
+    // Log de boas vindas para teste
+    console.log("Site da Reablar carregado com sucesso!");
 
-// 3. Efeito de Revelar ao Rolar a página (Scroll Reveal)
-const revealOnScroll = () => {
-    const cards = document.querySelectorAll('.reveal');
-    cards.forEach(card => {
-        const windowHeight = window.innerHeight;
-        const cardTop = card.getBoundingClientRect().top;
-        const revealPoint = 150;
-
-        if (cardTop < windowHeight - revealPoint) {
-            card.classList.add('active');
-        }
-    });
-};
-
-window.addEventListener('scroll', revealOnScroll);
-
-// 4. Smooth Scroll para links internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Animação simples ao rolar a página (Efeito de revelação)
+    const cards = document.querySelectorAll('.card');
+    
+    window.addEventListener('scroll', () => {
+        const triggerBottom = window.innerHeight * 0.8;
+        
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            
+            if(cardTop < triggerBottom) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
         });
+    });
+
+    // Função para rastrear clique no WhatsApp (útil para marketing futuro)
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    whatsappBtn.addEventListener('click', () => {
+        console.log("Usuário clicou para agendar via WhatsApp");
     });
 });
