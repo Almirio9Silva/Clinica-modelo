@@ -27,27 +27,31 @@
             <li><a href="#inicio">Início</a></li>
 			<li><a href="#missao">Missão</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato" class="btn-contato">Agendar Agora</a></li>
+			<li><a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="btn-agendar">Agendar Agora</a></li>
         </ul>
     </nav>
 </header>
 
     <main id="inicio">
-      <section class="hero" id="inicio">
+<section class="hero" id="inicio">
+    <div class="carousel-bg">
+        <div class="slide active" style="background-image: url('Reab1.jpg');"></div>
+        <div class="slide" style="background-image: url('Reab2.jpg');"></div>
+        <div class="slide" style="background-image: url('Reab3.jpg');"></div>
+    </div>
+
     <div class="hero-container">
-        
         <div class="hero-content">
             <h1>Sua reabilitação começa no conforto do seu lar.</h1>
             <p class="localizacao">📍 Atendimento no <strong>Distrito Federal e Entorno</strong></p>
-            <p>Especialistas em reabilitação, levando a estrutura de clínica completa até você.</p>
-
+            
             <div class="hero-contact-actions">
                 <a href="https://wa.me/5561993705603" class="btn-whatsapp-hero" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                    ENTRE EM CONTATO	
+                    ENTRE EM CONTATO
                 </a>
                 <div class="phone-display">
-                    <span>📞 (61) 61 9937-05603 </span>
+                    <span>📞 (61)99370-5603</span>
                 </div>
             </div>
             <p class="atendimento-nota">*Atendimento particular, NÃO aceitamos convênio</p>
@@ -66,7 +70,6 @@
                 <button type="submit" class="btn-enviar">ENVIAR</button>
             </form>
         </div>
-
     </div>
 </section>
 	
@@ -195,6 +198,34 @@
 </section>
 </section>
     </main>
+	
+	<section id="galeria" class="galeria-section">
+    <div class="container">
+        <div class="servicos-intro">
+            <span class="tagline">Nosso Propósito</span>
+            <h2>Dedicação em cada movimento, cuidado em cada detalhe</h2>
+        </div>
+        
+        <div class="grid-galeria">
+            <div class="foto-item">
+                <img src="Reab1.jpg" alt="Fisioterapia Domiciliar Reablar">
+            </div>
+            <div class="foto-item">
+                <img src="Reab2.jpg" alt="Reabilitação em Brasília">
+            </div>
+            <div class="foto-item">
+                <img src="Reab3.jpg" alt="Fisioterapeuta Especializado">
+            </div>
+        </div>
+		<div class="galeria-cta">
+    <p>Gostaria de um atendimento especializado no conforto da sua casa?</p>
+    <a href="https://wa.me/5561993705603" class="btn-whatsapp-galeria" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp ReabLar">
+        FALE COM UM FISIOTERAPEUTA AGORA
+    </a>
+</div>
+    </div>
+</section>
 
 <footer>
     <div class="footer-info">
@@ -234,6 +265,12 @@
 </script>
 
     <script src="script.js"></script>
-	
+	<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+	<span class="prev-slide">&#10094;</span>
+    <span class="next-slide">&#10095;</span>
+    <img class="lightbox-content" id="img-ampliada">
+    <div id="caption"></div>
+</div>
 </body>
 </html>
