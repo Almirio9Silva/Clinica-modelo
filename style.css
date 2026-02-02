@@ -808,3 +808,17 @@ footer {
     .next-slide { right: 5px; }
     .prev-slide, .next-slide { font-size: 35px; }
 }
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.nota-convenio {
+    font-size: 0.85rem;
+    color: var(--bege-areia); /* Ou uma cor suave da sua paleta */
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-style: italic;
+}

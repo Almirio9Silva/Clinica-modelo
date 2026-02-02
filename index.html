@@ -1,276 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Reablar Fisioterapia Domiciliar em Brasília - DF. Atendimento especializado no conforto do seu lar. Atendemos todas as regiões do Distrito Federal.">
-<meta name="keywords" content="Fisioterapia Brasília, Fisioterapia Domiciliar DF, Fisioterapeuta em Casa Brasília, Reabilitação Brasília">
-
-
-    <title>Reablar - Fisioterapia Domiciliar</title>
+    <meta name="description" content="ReabLar Fisioterapia Domiciliar em Brasília - DF. Atendimento especializado e humanizado no conforto do seu lar. Atendemos todas as regiões do Distrito Federal e Entorno.">
+    <meta name="keywords" content="Fisioterapia Brasília, Fisioterapia Domiciliar DF, Fisioterapeuta em Casa Brasília, Reabilitação Brasília, Fisioterapia Entorno DF, Home Care Brasília">
+    <title>ReabLar - Fisioterapia Domiciliar em Brasília e Entorno</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header>
-    <div class="logo-container">
-        <a href="#inicio" class="logo-link">
-            <img src="Reablarlogo.png" alt="Logo Reablar" class="logo-img">
-            <div class="logo-texto">
-                <span class="nome-principal">Reab<span>Lar</span></span>
-                <span class="subtitulo">Fisioterapia Domiciliar</span>
-            </div>
-        </a>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-			<li><a href="#missao">Missão</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-			<li><a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="btn-agendar">Agendar Agora</a></li>
-        </ul>
-    </nav>
-</header>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#inicio" class="logo-link">
+                <img src="Reablarlogo.png" alt="Logo ReabLar Fisioterapia Domiciliar" class="logo-img">
+                <div class="logo-texto">
+                    <span class="nome-principal">Reab<span>Lar</span></span>
+                    <span class="subtitulo">Fisioterapia Domiciliar</span>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#missao">Missão</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="btn-agendar">Agendar Agora</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main id="inicio">
-<section class="hero" id="inicio">
-    <div class="carousel-bg">
-        <div class="slide active" style="background-image: url('Reab1.jpg');"></div>
-        <div class="slide" style="background-image: url('Reab2.jpg');"></div>
-        <div class="slide" style="background-image: url('Reab3.jpg');"></div>
-    </div>
+        <section class="hero">
+            <div class="carousel-bg">
+                <div class="slide active" style="background-image: url('Reab1.jpg');"></div>
+                <div class="slide" style="background-image: url('Reab2.jpg');"></div>
+                <div class="slide" style="background-image: url('Reab3.jpg');"></div>
+            </div>
 
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1>Sua reabilitação começa no conforto do seu lar.</h1>
-            <p class="localizacao">📍 Atendimento no <strong>Distrito Federal e Entorno</strong></p>
-            
-            <div class="hero-contact-actions">
-                <a href="https://wa.me/5561993705603" class="btn-whatsapp-hero" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                    ENTRE EM CONTATO
-                </a>
-                <div class="phone-display">
-                    <span>📞 (61)99370-5603</span>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Sua reabilitação começa no conforto do seu lar.</h1>
+                    <p class="localizacao">📍 Atendimento no <strong>Distrito Federal e Entorno</strong></p>
+
+                    <div class="hero-contact-actions">
+                        <a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="btn-whatsapp-hero" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                            ENTRE EM CONTATO
+                        </a>
+                        <div class="phone-display">
+                            <span>📞 (61) 99370-5603</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-form">
+                    <h3>Solicite uma orientação profissional</h3>
+                    <p>Tire suas dúvidas e receba informações sobre nossos planos de reabilitação domiciliar personalizados para você.</p>
+                    <form id="formAtendimento">
+                        <div class="form-row">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                            <input type="text" id="telefone" placeholder="DDD + Telefone" required>
+                        </div>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="mensagem" placeholder="Conte-nos como podemos ajudar..." rows="4"></textarea>
+                        <button type="submit" class="btn-enviar">FALAR COM A EQUIPE</button>
+                    </form>
                 </div>
             </div>
-            <p class="atendimento-nota">*Atendimento particular, NÃO aceitamos convênio</p>
-        </div>
+        </section>
 
-        <div class="hero-form">
-            <h3>Precisa de um orçamento?</h3>
-            <p>Preencha o formulário abaixo e nossa equipe entrará em contato com você.</p>
-            <form action="#">
-                <div class="form-row">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="text" placeholder="DDD + Telefone" required>
+        <section id="missao" class="missao-section">
+            <div class="container-missao">
+                <div class="missao-header">
+                    <span class="tagline">Nosso Propósito</span>
+                    <h2>Missão – ReabLar</h2>
                 </div>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensagem" rows="4"></textarea>
-                <button type="submit" class="btn-enviar">ENVIAR</button>
-            </form>
-        </div>
-    </div>
-</section>
-	
-	<section id="missao" class="missao-section">
-    <div class="container-missao">
-        <div class="missao-header">
-            <span class="tagline">Nosso Propósito</span>
-            <h2>Missão – ReabLar</h2>
-        </div>
-        <div class="missao-conteudo">
-            <p>
-                Dedicar a cada paciente e sua família um atendimento de <strong>excelência em reabilitação domiciliar</strong>, 
-                pautado em um olhar especializado, no cuidado humanizado e na promoção do bem-estar, 
-                respeitando a individualidade e as necessidades de cada história.
-            </p>
-        </div>
-    </div>
-</section>
+                <div class="missao-conteudo">
+                    <p>
+                        Dedicar a cada paciente e sua família um atendimento de <strong>excelência em reabilitação domiciliar</strong>, 
+                        pautado em um olhar especializado, no cuidado humanizado e na promoção do bem-estar, 
+                        respeitando a individualidade e as necessidades de cada história.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<section id="vantagens" class="missao-section" style="background-color: var(--branco);">
-    <div class="container-vantagens">
-        <div class="vantagens-header">
-            <span class="tagline">Por que nos escolher</span>
-            <h2>Vantagens de ser um cliente ReabLar</h2>
-        </div>
-        
-        <div class="grid-servicos"> <div class="card">
-                <h3>Equipe Especializada</h3>
-                <p>Profissionais qualificados e experientes em reabilitação domiciliar, atuando com responsabilidade técnica e cuidado humanizado.</p>
+        <section id="vantagens" class="missao-section" style="background-color: var(--branco);">
+            <div class="container-vantagens">
+                <div class="vantagens-header">
+                    <span class="tagline">Por que nos escolher</span>
+                    <h2>Vantagens de ser um cliente ReabLar</h2>
+                </div>
+
+                <div class="grid-servicos">
+                    <div class="card">
+                        <h3>Equipe Especializada</h3>
+                        <p>Profissionais qualificados e experientes em reabilitação domiciliar em Brasília.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Planos Sob Medida</h3>
+                        <p>Cuidado individualizado construído a partir de suas necessidades e rotina.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Acompanhamento</h3>
+                        <p>Orientações e exercícios complementares junto à família em tempo real.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Cuidado Integrado</h3>
+                        <p>Diferentes especialidades em um único serviço terapêutico completo.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Conforto e Segurança</h3>
+                        <p>Atendimento realizado no lar, eliminando a necessidade de deslocamentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <div class="servicos-intro">
+                <span class="tagline">Qualidade e Expertise</span>
+                <h2>Especialidades da ReabLar</h2>
+                <p class="intro-texto">Equipe de fisioterapeutas especializados preparados para oferecer atendimento de excelência em todo o DF.</p>
             </div>
 
-            <div class="card">
-                <h3>Planos Sob Medida</h3>
-                <p>Cuidado individualizado construído a partir de suas necessidades e rotina, com ajustes constantes para alcançar seus objetivos.</p>
+            <div class="grid-servicos">
+                <div class="card">
+                    <h3>Fisioterapia Ortopédica</h3>
+                    <ul>
+                        <li>Dores na coluna e articulações</li>
+                        <li>Artrose e artrites</li>
+                        <li>Reabilitação funcional</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Fisioterapia Neurofuncional</h3>
+                    <ul>
+                        <li>Parkinson e AVC</li>
+                        <li>Alzheimer e demências</li>
+                        <li>Mobilidade e independência</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Geriátrica e Gerontológica</h3>
+                    <ul>
+                        <li>Prevenção de quedas</li>
+                        <li>Fortalecimento global</li>
+                        <li>Funcionalidade do idoso</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Acompanhamento</h3>
-                <p>Orientações e exercícios complementares junto à família, permitindo acompanhar a evolução funcional em tempo real.</p>
+        <section id="galeria" class="galeria-section">
+            <div class="container">
+                <div class="servicos-intro">
+                    <span class="tagline">Cuidado que acolhe</span>
+                    <h2>Transformando casas em lugares de superação</h2>
+                </div>
+
+                <div class="grid-galeria">
+                    <div class="foto-item"><img src="Reab1.jpg" alt="Atendimento Fisioterapia Domiciliar ReabLar"></div>
+                    <div class="foto-item"><img src="Reab2.jpg" alt="Reabilitação em Brasília DF"></div>
+                    <div class="foto-item"><img src="Reab3.jpg" alt="Fisioterapeuta Especializado no Lar"></div>
+                </div>
+
+                <div class="galeria-cta">
+                    <p>Gostaria de um atendimento especializado no conforto da sua casa?</p>
+                    <a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="btn-whatsapp-galeria" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp ReabLar">
+                        FALE COM UM FISIOTERAPEUTA AGORA
+                    </a>
+                </div>
             </div>
-
-            <div class="card">
-                <h3>Cuidado Integrado</h3>
-                <p>Diferentes especialidades em um único serviço, garantindo um plano terapêutico completo e organizado.</p>
-            </div>
-
-            <div class="card">
-                <h3>Conforto e Segurança</h3>
-                <p>Atendimento realizado no lar, proporcionando tranquilidade e eliminando a necessidade de deslocamentos estressantes.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section id="servicos" class="servicos">
-    <div class="servicos-intro">
-        <span class="tagline">Qualidade e Expertise</span>
-        <h2>ESPECIALIDADES DA REABLAR</h2>
-        <p class="intro-texto">
-            Somos apaixonados pelo que fazemos e contamos com uma equipe de fisioterapeutas especializados, preparados para oferecer um atendimento de excelência...
-        </p>
-    </div>
-
-    <div class="grid-servicos">
-        <div class="card">
-            <h3>Fisioterapia Ortopédica</h3>
-            <ul>
-                <li>Dores na coluna e articulações</li>
-                <li>Bursites e tendinites</li>
-                <li>Artrose e artrites</li>
-                <li>Reabilitação funcional para o dia a dia</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Fisioterapia Neurofuncional</h3>
-            <ul>
-                <li>Doença de Parkinson</li>
-                <li>AVC (Derrame)</li>
-                <li>Alzheimer e outras demências</li>
-                <li>Foco em mobilidade e independência</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Pré e Pós-Operatória</h3>
-            <ul>
-                <li>Próteses de quadril e joelho</li>
-                <li>Fraturas, entorses e imobilizações</li>
-                <li>Pré operatório especializado</li>
-                <li>Recuperação funcional segura</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Geriátrica e Gerontológica</h3>
-            <ul>
-                <li>Dores no corpo e artrose</li>
-                <li>Prevenção de quedas</li>
-                <li>Fortalecimento global</li>
-                <li>Melhora da funcionalidade do idoso</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Fisioterapia Respiratória</h3>
-            <ul>
-                <li>Higiene brônquica e expansão pulmonar</li>
-                <li>Reabilitação respiratória domiciliar</li>
-                <li>Doenças pulmonares crônicas</li>
-                <li>Suporte em oxigenoterapia</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Cuidados Paliativos</h3>
-            <ul>
-                <li>Alívio da dor e conforto</li>
-                <li>Controle de sintomas respiratórios</li>
-                <li>Dignidade e qualidade de vida</li>
-                <li>Suporte ao paciente e à família</li>
-            </ul>
-        </div>
-    </div>
-</section>
-</section>
+        </section>
     </main>
-	
-	<section id="galeria" class="galeria-section">
-    <div class="container">
-        <div class="servicos-intro">
-            <span class="tagline">Nosso Propósito</span>
-            <h2>Dedicação em cada movimento, cuidado em cada detalhe</h2>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>ReabLar Fisioterapia Domiciliar</strong></p>
+            <p>Atendimento especializado em todo o Distrito Federal e Entorno</p>
+            <p>Instagram: @reablarfisiodomiciliar</p>
         </div>
-        
-        <div class="grid-galeria">
-            <div class="foto-item">
-                <img src="Reab1.jpg" alt="Fisioterapia Domiciliar Reablar">
-            </div>
-            <div class="foto-item">
-                <img src="Reab2.jpg" alt="Reabilitação em Brasília">
-            </div>
-            <div class="foto-item">
-                <img src="Reab3.jpg" alt="Fisioterapeuta Especializado">
-            </div>
+        <div class="footer-bottom">
+            <p class="nota-convenio">Informamos que a ReabLar realiza atendimentos exclusivamente particulares. Não trabalhamos com convênios.</p>
+            <p>&copy; 2026 ReabLar Fisioterapia Domiciliar. Todos os direitos reservados.</p>
         </div>
-		<div class="galeria-cta">
-    <p>Gostaria de um atendimento especializado no conforto da sua casa?</p>
-    <a href="https://wa.me/5561993705603" class="btn-whatsapp-galeria" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp ReabLar">
-        FALE COM UM FISIOTERAPEUTA AGORA
+    </footer>
+
+    <a href="https://wa.me/5561993705603?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20ReabLar." class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
-</div>
-    </div>
-</section>
 
-<footer>
-    <div class="footer-info">
-        <p><strong>Reablar Fisioterapia Domiciliar</strong></p>
-        <p>Atendimento especializado em todo o Distrito Federal e Entorno</p>
-        <p>Siga-nos no Instagram: @reablarfisiodomiciliar</p>
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <span class="prev-slide">&#10094;</span>
+        <span class="next-slide">&#10095;</span>
+        <img class="lightbox-content" id="img-ampliada">
     </div>
-    <p class="copyright">&copy; 2026 Todos os direitos reservados.</p>
-</footer>
-
-<a href="https://wa.me/5561993705603" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-	
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Reablar Fisioterapia Domiciliar",
-  "description": "Fisioterapia domiciliar especializada em Brasília, DF.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Brasília",
-    "addressRegion": "DF",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCircle",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Fisioterapia Domiciliar"
-    },
-    "geoRadius": "50000"
-  },
-  "url": "https://seu-site-aqui.com.br"
-}
-</script>
 
     <script src="script.js"></script>
-	<div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
-	<span class="prev-slide">&#10094;</span>
-    <span class="next-slide">&#10095;</span>
-    <img class="lightbox-content" id="img-ampliada">
-    <div id="caption"></div>
-</div>
 </body>
+
 </html>
